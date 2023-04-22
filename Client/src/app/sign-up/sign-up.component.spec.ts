@@ -11,7 +11,9 @@ describe('SignUpComponent', () => {
       declarations: [ SignUpComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(SignUpComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -1,30 +1,48 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from '../../../z app/app-routing.module';
 import { AppComponent } from './app.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
-import { ModelsComponent } from './models/models.component';
-import { ServicesComponent } from './services/services.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { HttpRequestInterceptor } from './http-request-interceptor';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 import { VerifyCodeComponent } from './verify-code/verify-code.component';
+import { AppModuleComponent } from './app.module/app.module.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent,
     LoginPageComponent,
-    ModelsComponent,
-    ServicesComponent,
     SignUpComponent,
-    VerifyCodeComponent
+    LandingPageComponent,
+    VerifyCodeComponent,
+    AppModuleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    HttpClientModule,
+    MatButtonModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    [
+      {
+        provide: HTTP_INTERCEPTORS, useClass: HttpRequestInterceptor
+        , multi: true
+      }
+    ]
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
