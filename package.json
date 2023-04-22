@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@angular/material": "^15.2.8",
+    "@types/node": "^18.15.13",
+    "codelyzer": "^6.0.2",
+    "jasmine-spec-reporter": "^7.0.0",
+    "protractor": "^7.0.0",
+    "ts-node": "^10.9.1",
+    "tslint": "^6.1.3"
+  }
+}

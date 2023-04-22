@@ -11,9 +11,7 @@ describe('VerifyCodeComponent', () => {
       declarations: [ VerifyCodeComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(VerifyCodeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RegistrationService } from './services/registration.service';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +6,5 @@ import { RegistrationService } from './services/registration.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'zoho-app';
-  userName: string = ''
-  constructor() {
-  }
-
-
-
+  title = 'Client';
 }
