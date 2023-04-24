@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { AppRoutingModule } from '../../../z app/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,7 +14,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { HttpRequestInterceptor } from './http-request-interceptor';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { VerifyCodeComponent } from './verify-code/verify-code.component';
-import { AppModuleComponent } from './app.module/app.module.component';
+
 
 
 @NgModule({
@@ -23,8 +23,7 @@ import { AppModuleComponent } from './app.module/app.module.component';
     LoginPageComponent,
     SignUpComponent,
     LandingPageComponent,
-    VerifyCodeComponent,
-    AppModuleComponent
+    VerifyCodeComponent
   ],
   imports: [
     BrowserModule,

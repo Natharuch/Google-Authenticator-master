@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from '../models/User';
-import { RegistrationService } from '../../../../z app/services/registration.service';
+import { RegistrationService } from '../services/registration.service';
 
 @Component({
   selector: 'app-login-page',

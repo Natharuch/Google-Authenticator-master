@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { RegistrationService } from '../../../../z app/services/registration.service';
+import { RegistrationService } from '../services/registration.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
