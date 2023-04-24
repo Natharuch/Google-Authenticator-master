@@ -1,5 +1,11 @@
 import React, { useState } from "react";
+import React, { Component } from "react";
 import { useNavigate } from "react-router-dom";
+import { render } from "react-dom";
+
+import speakeasy from "speakeasy";
+import QRCode from "qrcode";
+import CryptoJS from "crypto-js";
 
 
 const PhoneVerify = () => {
