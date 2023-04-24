@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import React, { Component } from "react";
+// import React, { Component } from "react";
 import { useNavigate } from "react-router-dom";
 import { render } from "react-dom";
 
@@ -11,7 +11,7 @@ const [code, setCode] = useState("");
 const navigate = useNavigate();
 
 
-class PhoneVerify extends Component {
+const PhoneVerify = () => {
     state = {
         image: "",
         secret: "",
@@ -19,7 +19,7 @@ class PhoneVerify extends Component {
         isCodeValid: null
       };
 
-      componentDidMount() {
+      const componentDidMount = () => {
         // const secret = speakeasy.generateSecret({name: 'Adidas'});
         const secret = {
           ascii: "?:SD%oDD<E!^q^1N):??&QkeqRkhkpt&",
